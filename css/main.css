@@ -112,7 +112,7 @@ h1, .h1{
 
 .sidebar .item{
   display: block;
-  height: 60px;
+  height: 90px;
   width: 100%;
   white-space: nowrap;
   overflow: hidden;
@@ -153,6 +153,11 @@ h1, .h1{
 
 .center{
   margin: 0 auto;
+}
+
+.sidebar .item.space{
+  height: 163px;
+  cursor: default;
 }
 
 
