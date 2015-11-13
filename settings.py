@@ -1,0 +1,58 @@
+DATABASES = {
+    'default': {
+        'NAME': 'mesalva',
+        'ENGINE': 'django.db.backends.mysql',
+        'USER': 'root',
+        'PASSWORD': '123456',
+        'HOST': '127.0.0.1'
+    },
+}
+
+import os
+
+BASE_DIR = os.path.dirname(os.path.abspath(__file__))
+
+TEMPLATE_LOADERS = (
+    ('django.template.loaders.cached.Loader', (
+        'django.template.loaders.filesystem.Loader',
+        'django.template.loaders.app_directories.Loader',
+    )),
+)
+
+MIDDLEWARE_CLASSES = (
+    'django.middleware.csrf.CsrfViewMiddleware',
+    'django.middleware.common.CommonMiddleware',
+    'django.contrib.sessions.middleware.SessionMiddleware',
+    'django.contrib.auth.middleware.AuthenticationMiddleware',
+    'django.contrib.messages.middleware.MessageMiddleware',
+    'django.middleware.http.ConditionalGetMiddleware',
+    'django.middleware.clickjacking.XFrameOptionsMiddleware',
+)
+
+ROOT_URLCONF = 'code.urls'
+
+TEMPLATE_CONTEXT_PROCESSORS = (
+    'django.contrib.auth.context_processors.auth',
+    'django.core.context_processors.debug',
+    'django.core.context_processors.i18n',
+    'django.core.context_processors.request',
+    'django.core.context_processors.media',
+    'django.contrib.messages.context_processors.messages',
+)
+
+INSTALLED_APPS = (
+    # External apps
+    'code',
+)
+
+TEMPLATE_DIRS = (
+    BASE_DIR + "/templates", )
+
+DEBUG = True
+STATIC_ROOT = os.path.abspath(BASE_DIR + "/static/")
+STATIC_URL = "/static/"
+STATICFILES_DIRS = (
+    os.path.join(BASE_DIR, 'static'))
+
+if 'SECRET_KEY' not in locals():
+    SECRET_KEY = 'PDwXboUq!=hPjnrtG2=ge#N$Dwy+wn@uivrugwpic8mxyPfHka'
