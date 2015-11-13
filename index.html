@@ -35,9 +35,6 @@
             <div class="general-container">
                 <div class="general-limiter">
                     <div class=" back-mswhite column-8 center">
-                        <div class>
-                            <h1> HOME </h1>
-                        </div>
                     </div>  
                 </div>
             </div>
@@ -49,6 +46,7 @@
         <script src="js/main.js"></script>
         <script type="text/javascript">
              $(document).ready(function(){
+                 $(".center").load("actions.html #home");
                  $(".inserir").click(function(){
                      $(".center").load("actions.html #inserir");
                  });

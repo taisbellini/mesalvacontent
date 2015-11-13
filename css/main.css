@@ -160,6 +160,13 @@ h1, .h1{
   cursor: default;
 }
 
+.sidebar .item a{
+  left: 10px;
+  position: relative;
+  display: block;
+  top: 16px;
+}
+
 .stats:after{
   position: absolute;
   background-image:url('../img/chart-pie.png');
