@@ -160,6 +160,39 @@ h1, .h1{
   cursor: default;
 }
 
+.stats:after{
+  position: absolute;
+  background-image:url('../img/chart-pie.png');
+  background-size: 57px;
+  background-repeat: no-repeat;
+  background-position: 7px 18px;
+  content: " ";
+  height: 87px;
+  width: 73px;
+}
+
+.inserir:after{
+  position: absolute;
+  background-image:url('../img/add_red.png');
+  background-size: 66px;
+  background-repeat: no-repeat;
+  background-position: 4px 11px;
+  content: " ";
+  height: 87px;
+  width: 73px;  
+}
+
+.home:after{
+  position: absolute;
+  background-image:url('../img/home.png');
+  background-size: 66px;
+  background-repeat: no-repeat;
+  background-position: 4px 11px;
+  content: " ";
+  height: 87px;
+  width: 73px;
+}
+
 
 
 

@@ -23,20 +23,21 @@
                     </a>
                 </li>
                 <li class="item space"></li>
-                <li class="item">
-                    <a href="#" id="inserir"> Inserir </a>
-                </li>
-                <li class="item">
-                </li>
-                <li class="item">
+                <li class="item home">
                 </li> 
+                <li class="item inserir">
+                </li>
+                <li class="item stats">
+                </li>
             </ul>
             <section class="header-top back-msread">
             </section>
             <div class="general-container">
                 <div class="general-limiter">
                     <div class=" back-mswhite column-8 center">
-                        <h1> Oie </h1>
+                        <div class>
+                            <h1> HOME </h1>
+                        </div>
                     </div>  
                 </div>
             </div>
@@ -48,8 +49,14 @@
         <script src="js/main.js"></script>
         <script type="text/javascript">
              $(document).ready(function(){
-                 $("#inserir").click(function(){
-                     $(".center").load("inserir.html");
+                 $(".inserir").click(function(){
+                     $(".center").load("actions.html #inserir");
+                 });
+                 $(".stats").click(function(){
+                     $(".center").load("actions.html #stats");
+                 });
+                 $(".home").click(function(){
+                     $(".center").load("actions.html #home");
                  });
             });
         </script>
