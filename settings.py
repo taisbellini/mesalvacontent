@@ -43,6 +43,7 @@ TEMPLATE_CONTEXT_PROCESSORS = (
 INSTALLED_APPS = (
     # External apps
     'code',
+    'django.contrib.staticfiles'
 )
 
 TEMPLATE_DIRS = (
@@ -50,7 +51,7 @@ TEMPLATE_DIRS = (
 
 DEBUG = True
 STATIC_ROOT = os.path.abspath(BASE_DIR + "/static/")
-STATIC_URL = "/static/"
+STATIC_URL = "/../"
 STATICFILES_DIRS = (
     os.path.join(BASE_DIR, 'static'))
 

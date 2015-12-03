@@ -4,6 +4,7 @@ import views
 
 urlpatterns = patterns('',
                             url(r'^$', views.index, name="index"),
-                            url(r'^actions/$', views.actions, name="actions"),
+                            url(r'^statistics/$', views.statistics, name="statistics"),
+                            url(r'^add/$', views.add, name="add"),
                             (r'^(?P<path>(?:img|css|js|text|static|fonts|other)/.*)$', 'django.views.static.serve', {'document_root': settings.STATIC_ROOT}),
                        )
