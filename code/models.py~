@@ -10,7 +10,7 @@ class ProfessorTarefa(models.Model):
     professor = models.ForeignKey(Professor, null=True, blank=True)
     deadline_contrato = models.DateTimeField(auto_now_add=False)
     previsao = models.DateTimeField(auto_now_add=False)
-    data_entrega = models.DateTimeField(auto_now_add=False, null=True)
+    data_entrega = models.DateTimeField(auto_now_add=False)
     prontos = models.BooleanField(default=False)
     bonus = models.BooleanField(default=False)
 

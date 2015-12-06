@@ -49,7 +49,7 @@ INSTALLED_APPS = (
 TEMPLATE_DIRS = (
     BASE_DIR + "/templates", )
 
-USE_TZ = True
+USE_TZ = "True"
 
 DEBUG = True
 STATIC_ROOT = os.path.abspath(BASE_DIR + "/static/")

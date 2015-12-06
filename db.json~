@@ -1,0 +1,96 @@
+[
+  {
+    "model": "code.professor",
+    "pk": 1,
+    "fields": {
+      "cpf": "1234567",
+      "nome": "Andrade"
+    }
+  },
+  {
+    "model": "code.curso",
+    "pk": "1",
+    "fields": {
+        "nome":"Origem da vida",
+        "materia":"Biologia",
+        "categoria":"Ensino superior"
+    }
+  },
+  {
+    "model": "code.bonus",
+    "pk": "1",
+    "fields": {
+        "avaliacao":"4.2",
+        "planilha_quadro":"True",
+        "bonus":"True"
+    }
+  },
+  {
+    "model": "code.status",
+    "pk": "1",
+    "fields": {
+        "status_video":"0",
+        "status_exercicio":"0"
+    }
+  },
+  {
+    "model": "code.professortarefa",
+    "pk": "1",
+    "fields": {
+        "deadline_contrato":"2015-11-19T10:28:43Z",
+        "previsao":"2015-10-19T10:28:43Z",
+        "prontos":"False",
+        "bonus":"False",
+        "professor":"1"
+    }
+  },
+  {
+    "model": "code.professortarefa",
+    "pk": "2",
+    "fields": {
+        "deadline_contrato":"2015-11-23T10:28:43Z",
+        "previsao":"2015-10-14T10:28:43Z",
+        "prontos":"False",
+        "bonus":"False",
+        "professor":"1"
+    }
+  },
+  {
+    "model": "code.modulo",
+    "pk": "1",
+    "fields": {
+        "nome_modulo":"Origem da vida",
+        "previsao":"2015-10-14T10:28:43Z",
+        "prontos":"False",
+        "bonus":"False",
+        "professor":"1"
+    }
+  },
+  {
+    "model": "code.aula",
+    "pk": "1",
+    "fields": {
+        "nome":"origem da vida 1",
+        "data":"2015-08-19T10:28:43Z",
+        "gravado":"True",
+        "upload":"True",
+        "publicado":"True",
+        "descricao":"Primeira aula de origem da vida",
+	"comentario":"",
+        "bonus":"1"
+    }
+  },
+  {
+    "model": "code.aula",
+    "pk": "2",
+    "fields": {
+        "nome":"origem da vida 2",
+        "data":"2015-09-19T10:28:43Z",
+        "gravado":"True",
+        "upload":"True",
+        "publicado":"True",
+        "descricao":"Segunda aula de origem da vida",
+        "bonus":"1"
+    }
+  }
+]
