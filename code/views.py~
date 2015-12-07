@@ -15,12 +15,12 @@ def show_modules(request, pk):
     modules = Modulo.objects.filter(video__professor=pk)
     return render(request, "module.html",
     {
-        'modules': modules,
+        'professores': profs,
     })
 
 def show_classes(request, pk):
     classes = Aula.objects.filter(modulo=pk)
     return render(request, "class.html",
     {
-        'classes': classes,
+        'professores': profs,
     })

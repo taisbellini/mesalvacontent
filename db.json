@@ -8,11 +8,37 @@
     }
   },
   {
+    "model": "code.professor",
+    "pk": 2,
+    "fields": {
+      "cpf": "7654321",
+      "nome": "Carlos"
+    }
+  },
+  {
     "model": "code.curso",
     "pk": "1",
     "fields": {
         "nome":"Origem da vida",
         "materia":"Biologia",
+        "categoria":"Ensino superior"
+    }
+  },
+  {
+    "model": "code.curso",
+    "pk": "2",
+    "fields": {
+        "nome":"SQL",
+        "materia":"Computacao",
+        "categoria":"Ensino superior"
+    }
+  },
+  {
+    "model": "code.curso",
+    "pk": "3",
+    "fields": {
+        "nome":"Logica",
+        "materia":"Computacao",
         "categoria":"Ensino superior"
     }
   },
@@ -52,7 +78,18 @@
         "previsao":"2015-10-14T10:28:43Z",
         "prontos":"False",
         "bonus":"False",
-        "professor":"1"
+        "professor":"2"
+    }
+  },
+  {
+    "model": "code.professortarefa",
+    "pk": "3",
+    "fields": {
+        "deadline_contrato":"2015-11-23T10:28:43Z",
+        "previsao":"2015-10-14T10:28:43Z",
+        "prontos":"False",
+        "bonus":"False",
+        "professor":"2"
     }
   },
   {
@@ -61,6 +98,26 @@
     "fields": {
         "nome_modulo":"Origem da vida",
         "video":"1",
+        "exercicio":"2",
+        "status":"1"
+    }
+  },
+  {
+    "model": "code.modulo",
+    "pk": "2",
+    "fields": {
+        "nome_modulo":"SQL",
+        "video":"2",
+        "exercicio":"2",
+        "status":"1"
+    }
+  },
+  {
+    "model": "code.modulo",
+    "pk": "3",
+    "fields": {
+        "nome_modulo":"Logica pra computacao",
+        "video":"3",
         "exercicio":"2",
         "status":"1"
     }
@@ -92,6 +149,62 @@
         "descricao":"Segunda aula de origem da vida",
         "bonus":"1",
 	"modulo":"1"
+    }
+  },
+  {
+    "model": "code.aula",
+    "pk": "3",
+    "fields": {
+        "nome":"Insert",
+        "data":"2015-09-19T10:28:43Z",
+        "gravado":"True",
+        "upload":"True",
+        "publicado":"True",
+        "descricao":"Aula de insert em SQL",
+        "bonus":"1",
+	"modulo":"2"
+    }
+  },
+  {
+    "model": "code.aula",
+    "pk": "4",
+    "fields": {
+        "nome":"Select",
+        "data":"2015-09-19T10:28:43Z",
+        "gravado":"True",
+        "upload":"True",
+        "publicado":"True",
+        "descricao":"Aula de select em SQL",
+        "bonus":"1",
+	"modulo":"2"
+    }
+  },
+  {
+    "model": "code.aula",
+    "pk": "5",
+    "fields": {
+        "nome":"Drop",
+        "data":"2015-09-19T10:28:43Z",
+        "gravado":"True",
+        "upload":"True",
+        "publicado":"True",
+        "descricao":"Aula de drop em SQL",
+        "bonus":"1",
+	"modulo":"2"
+    }
+  },
+  {
+    "model": "code.aula",
+    "pk": "6",
+    "fields": {
+        "nome":"Aula inaugural",
+        "data":"2015-05-12T10:28:43Z",
+        "gravado":"True",
+        "upload":"True",
+        "publicado":"True",
+        "descricao":"Introducao a logica",
+        "bonus":"1",
+	"modulo":"3"
     }
   }
 ]

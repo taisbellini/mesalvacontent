@@ -32,7 +32,7 @@ MIDDLEWARE_CLASSES = (
 ROOT_URLCONF = 'code.urls'
 
 TEMPLATE_CONTEXT_PROCESSORS = (
-    'django.contrib.auth.context_processors.auth',
+    #'django.contrib.auth.context_processors.auth',
     'django.core.context_processors.debug',
     'django.core.context_processors.i18n',
     'django.core.context_processors.request',
@@ -43,7 +43,12 @@ TEMPLATE_CONTEXT_PROCESSORS = (
 INSTALLED_APPS = (
     # External apps
     'code',
-    'django.contrib.staticfiles'
+     'django.contrib.contenttypes',
+    'django.contrib.auth',
+    'django.contrib.admin',
+     'django.contrib.sessions',
+     'django.contrib.messages',
+     'django.contrib.staticfiles',
 )
 
 TEMPLATE_DIRS = (
@@ -52,6 +57,8 @@ TEMPLATE_DIRS = (
 USE_TZ = True
 
 DEBUG = True
+TEMPLATE_DEBUG = DEBUG
+
 STATIC_ROOT = os.path.abspath(BASE_DIR + "/static/")
 STATIC_URL = "/../"
 STATICFILES_DIRS = (

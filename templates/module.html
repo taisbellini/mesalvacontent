@@ -1,0 +1,19 @@
+{% extends "base.html" %}
+
+{% block content %}
+
+<div>
+	    <div class="padd">
+		<ul  class="latest-news">
+			{% for module in modules %}
+		       		<li>
+		            	<!-- professor -->
+		            	<h5><a href="{% url 'show_classes' module.id %}">{{ module.nome_modulo }}</a></h5>
+		            	
+		        	</li>
+			{% endfor %}
+                </ul>
+            </div>
+	    <div class="widget-foot" />
+
+{% endblock %}

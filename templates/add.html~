@@ -1,0 +1,30 @@
+{% extends "base.html" %}
+
+{% block content %}
+
+<div>
+        <div class="matter">
+            <div class="container">
+
+                <!-- Recent News -->
+                <div class="col-md-12">
+                    <div class="widget">
+	    <div class="padd">
+		<ul  class="latest-news">
+			{% for professor in professores %}
+		       		<li>
+		            	<!-- professor -->
+		            	<h5><a href="{% url 'show' professor.id %}">{{ professor.nome }}</a> - <a> {{ professor.cpf }} </a> </h5>
+		            	
+		        	</li>
+			{% endfor %}
+                </ul>
+            </div>
+	    <div class="widget-foot" />
+</div>
+</div>
+</div>
+</div>
+</div>
+
+{% endblock %}
